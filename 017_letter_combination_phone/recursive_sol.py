@@ -15,7 +15,6 @@ class Solution:
             if len(curStr) == len(digits):
                 res.append(curStr)
                 return
-            for c in digitToChar[digits[i]]:
                 backTrack(i+1, curStr+c)
         if digits:
             backTrack(0, "")
