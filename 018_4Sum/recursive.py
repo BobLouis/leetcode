@@ -23,6 +23,7 @@ class Solution:
                 for i in range(0, len(nums) - N + 1):
                     if (nums[i]*N > target):
                         break
+                    # avoid duplicate results
                     if(i == 0 or (i > 0 and nums[i] != nums[i-1])):
                         findNSum(nums[i+1:], target - nums[i],
                                  N-1, result+[nums[i]], results)
