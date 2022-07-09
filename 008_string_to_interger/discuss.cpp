@@ -11,5 +11,6 @@ int atoi(const char *str) {
         }
         base  = 10 * base + (str[i++] - '0');
     }
+    in ad;
     return base * sign;
 }
